@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "XionzKernel",
-      "repo": "https://github.com/Sizo69/kernel_xiaomi_sm8250_N0.git",
-      "branch": "staging",
+      "repo": "https://github.com/Sizo69/InfiniR_kernel_alioth.git",
+      "branch": "14.0-alioth",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
