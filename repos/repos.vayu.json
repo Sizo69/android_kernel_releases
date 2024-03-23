@@ -37,8 +37,8 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/GXC2356/AnyKernel3.git",
-      "branch": "master"
+      "repo": "https://github.com/Sizo69/Alioth_Anykernel.git",
+      "branch": "alioth"
     }
   }
 ]
