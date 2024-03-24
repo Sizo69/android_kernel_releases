@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "XionzKernel",
-      "repo": "https://github.com/Sizo69/InfiniR_kernel_alioth.git",
-      "branch": "14.0-alioth",
+      "repo": "https://github.com/Sizo69/Kernel_xiaomi_alioth.git",
+      "branch": "master",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
