@@ -3,8 +3,8 @@
     "kernelSource": {
       "name": "PerryAmaretto-GKI",
       "repo": "https://github.com/Sizo69/kernel_new.git",
-      "branch": "shirayuki-5.10-neo",
-      "device": "gki",
+      "branch": "staging",
+      "device": "mondrian",
       "defconfig": "gki_defconfig"
     },
     "withKernelSU": false,
