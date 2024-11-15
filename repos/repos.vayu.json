@@ -2,9 +2,9 @@
   {
     "kernelSource": {
       "name": "PerryAmaretto-GKI",
-      "repo": "https://github.com/Sizo69/kernel_new.git",
-      "branch": "staging",
-      "device": "mondrian",
+      "repo": "https://github.com/Beryllium-4-19-Project/android_kernel_qcom_sdm845_4.19.git",
+      "branch": "sdm845",
+      "device": "beryllium",
       "defconfig": "gki_defconfig"
     },
     "withKernelSU": false,
