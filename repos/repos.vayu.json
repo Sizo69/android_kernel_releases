@@ -10,8 +10,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r498229b.git",
-        "branch": "14.0",
+        "repo": "https://gitlab.com/LeCmnGend/clang.git",
+        "branch": "clang-19",
         "name": "clang",
         "binPath": ["bin"]
       },
