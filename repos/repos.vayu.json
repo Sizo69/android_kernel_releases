@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "-perf",
-      "repo": "https://github.com/Beryllium-4-19-Project/android_kernel_qcom_sdm845_4.19.git",
+      "repo": "https://github.com/Sizo69/android_kernel_qcom_sdm845_4.19.git",
       "branch": "sdm845",
       "device": "beryllium",
       "defconfig": "gki_defconfig vendor/sdm845-perf_defconfig"
