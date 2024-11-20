@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "perf",
-      "repo": "https://github.com/Sizo69/android_kernel_xiaomi_mondrian.git",
-      "branch": "Mondrian",
+      "repo": "https://github.com/Sizo69/kernel_AstraL_mondrian.git",
+      "branch": "main",
       "device": "mondrian",
-      "defconfig": "waipio-gki_defconfig"
+      "defconfig": "mondrian_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
