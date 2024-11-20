@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "-perf",
+      "name": "perf",
       "repo": "https://github.com/Sizo69/android_kernel_qcom_sdm845_4.19.git",
       "branch": "sdm845",
       "device": "beryllium",
