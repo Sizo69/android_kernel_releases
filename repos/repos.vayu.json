@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "perf",
-      "repo": "https://github.com/Sizo69/kernel_xiaomi_mondrian.git",
-      "branch": "mondrian",
+      "repo": "https://github.com/DOITfit/android_kernel_xiaomi_mondrian.git",
+      "branch": "test",
       "device": "mondrian",
-      "defconfig": "gki_defconfig"
+      "defconfig": "mondrian_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
