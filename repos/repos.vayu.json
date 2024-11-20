@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "perf",
-      "repo": "https://github.com/Sizo69/android_kernel_qcom_sdm845_4.19.git",
-      "branch": "sdm845",
-      "device": "beryllium",
-      "defconfig": "gki_defconfig vendor/sdm845-perf_defconfig"
+      "repo": "https://github.com/Sizo69/kernel_AstraL_mondrian.git",
+      "branch": "main",
+      "device": "mondrian",
+      "defconfig": "vendor/waipio_defconfig vendor/mondrian_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
