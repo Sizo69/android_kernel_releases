@@ -11,7 +11,7 @@
     "toolchains": [
       {
         "repo": "https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r536225.git",
-        "branch": "15.0",
+        "branch": "14.0",
         "name": "clang",
         "binPath": ["bin"]
       },
