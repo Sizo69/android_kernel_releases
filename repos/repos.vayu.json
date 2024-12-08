@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "perf",
-      "repo": "https://github.com/Sizo69/kernel_xiaomi_mondrian.git",
-      "branch": "mondrian",
-      "device": "mondrian",
-      "defconfig": "gki_defconfig vendor/mondrian_GKI.config"
+      "name": "Magictime",
+      "repo": "https://github.com/Sizo69/kernel_xiaomi_sm8250.git",
+      "branch": "magictime-release",
+      "device": "alioth",
+      "defconfig": "alioth_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
