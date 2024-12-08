@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "RK",
       "repo": "https://github.com/Sizo69/Realking_kernel_sm8250.git",
-      "branch": "main",
+      "branch": "beta",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
