@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "Magictime",
+      "name": "RK",
       "repo": "https://github.com/Sizo69/Realking_kernel_sm8250.git",
       "branch": "main",
       "device": "alioth",
@@ -37,7 +37,7 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/Sizo69/AnyKernel3.git",
+      "repo": "https://github.com/Sizo69/AnyKernel3_alioth.git",
       "branch": "master"
     }
   }
