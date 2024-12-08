@@ -5,7 +5,7 @@
       "repo": "https://github.com/Beryllium-4-19-Project/android_kernel_xiaomi_sdm845.git",
       "branch": "rebase",
       "device": "Beryllium",
-      "defconfig": "vendor/sdm845-perf_defconfig"
+      "defconfig": "gki_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
