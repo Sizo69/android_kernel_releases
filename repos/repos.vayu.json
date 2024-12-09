@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Boot",
-      "repo": "https://github.com/Shirayuki39/kernel_new.git",
-      "branch": "mahiru-rebase",
-      "device": "mondrian",
-      "defconfig": "gki_defconfig"
+      "repo": "https://github.com/Sizo69/Realking_kernel_sm8250.git",
+      "branch": "beta",
+      "device": "alioth",
+      "defconfig": "alioth_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
@@ -38,7 +38,7 @@
       "use": true,
       "release": true,
       "repo": "https://github.com/Sizo69/AnyKernel3_alioth.git",
-      "branch": "mondrian"
+      "branch": "master"
     }
   }
 ]
