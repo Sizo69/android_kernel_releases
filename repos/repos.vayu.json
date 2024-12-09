@@ -10,8 +10,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r536225.git",
-        "branch": "14.0",
+        "repo": "https://gitlab.com/kuroringo901/clang-mandisa.git",
+        "branch": "uvite",
         "name": "clang",
         "binPath": ["bin"]
       },
