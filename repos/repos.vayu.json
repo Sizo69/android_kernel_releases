@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "RK",
-      "repo": "https://github.com/Sizo69/Realking_kernel_sm8250.git",
-      "branch": "beta",
+      "repo": "https://github.com/Sizo69/sm8250_napi.git",
+      "branch": "magictime-new",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
