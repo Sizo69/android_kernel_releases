@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "RealKing",
-      "repo": "https://github.com/Sizo69/Realking_kernel_sm8250.git",
-      "branch": "beta",
-      "device": "alioth",
-      "defconfig": "alioth_defconfig"
+      "name": "Boot",
+      "repo": "https://github.com/Shirayuki39/kernel_new.git",
+      "branch": "mahiru-rebase",
+      "device": "mondrian",
+      "defconfig": "gki_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
