@@ -1,8 +1,8 @@
 [
   {
     "kernelSource": {
-      "name": "Boot",
-      "repo": "https://github.com/Sizo69/Realking_kernel_sm8250.git",
+      "name": "lLVM KING",
+      "repo": "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.5/clang+llvm-19.1.5-aarch64-linux-gnu.tar.xz",
       "branch": "beta",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
