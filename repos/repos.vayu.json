@@ -10,8 +10,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.5/clang+llvm-19.1.5-aarch64-linux-gnu.tar.xz",
-        "branch": "release",
+        "repo": "https://gitlab.com/GhostMaster69-dev/cosmic-clang.git",
+        "branch": "master",
         "name": "clang",
         "binPath": ["bin"]
       },
