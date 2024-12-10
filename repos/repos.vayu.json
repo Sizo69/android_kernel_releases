@@ -10,8 +10,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/GhostMaster69-dev/cosmic-clang.git",
-        "branch": "master",
+        "repo": "https://bitbucket.org/thexperienceproject/yuki-clang.git",
+        "branch": "20.0.0git",
         "name": "clang",
         "binPath": ["bin"]
       },
