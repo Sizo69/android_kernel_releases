@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "lLVM KING",
-      "repo": "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.5/clang+llvm-19.1.5-aarch64-linux-gnu.tar.xz",
+      "repo": "",
       "branch": "beta",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
@@ -10,8 +10,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/kuroringo901/clang-mandisa.git",
-        "branch": "uvite",
+        "repo": "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.5/clang+llvm-19.1.5-aarch64-linux-gnu.tar.xz",
+        "branch": "release",
         "name": "clang",
         "binPath": ["bin"]
       },
