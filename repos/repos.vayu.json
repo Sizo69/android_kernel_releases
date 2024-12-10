@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "lLVM KING",
-      "repo": "",
+      "repo": "https://github.com/Sizo69/Realking_kernel_sm8250.git",
       "branch": "beta",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
