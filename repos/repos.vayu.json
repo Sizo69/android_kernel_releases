@@ -10,8 +10,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/GhostMaster69-dev/cosmic-clang.git",
-        "branch": "master",
+        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
+        "branch": "18",
         "name": "clang",
         "binPath": ["bin"]
       },
