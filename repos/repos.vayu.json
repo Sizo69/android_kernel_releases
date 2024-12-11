@@ -5,7 +5,7 @@
       "repo": "https://github.com/Sizo69/BAALAM_android_kernel_xiaomi_sm8250.git",
       "branch": "upstream",
       "device": "alioth",
-      "defconfig": "alioth_defconfig"
+      "defconfig": "vendor/alioth_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
