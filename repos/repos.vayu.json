@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "KING",
-      "repo": "https://github.com/Sizo69/Realking_kernel_sm8250.git",
-      "branch": "dev",
+      "repo": "https://github.com/Sizo69/BAALAM_android_kernel_xiaomi_sm8250.git",
+      "branch": "upstream",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
