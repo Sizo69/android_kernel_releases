@@ -10,7 +10,7 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/XSans0/WeebX-Clang/releases/download/WeebX-Clang-20.0.0git-release/WeebX-Clang-20.0.0git.tar.gz",
+        "repo": "https://raw.githubusercontent.com/XSans0/WeebX-Clang/main/main/link.txt",
         "branch": "",
         "name": "clang",
         "binPath": ["bin"]
