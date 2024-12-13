@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "Baalam",
-      "repo": "https://github.com/Sizo69/BAALAM_android_kernel_xiaomi_sm8250.git",
-      "branch": "upstream",
+      "name": "RK",
+      "repo": "https://github.com/Sizo69/Realking_kernel_sm8250.git",
+      "branch": "kernelsu",
       "device": "alioth",
       "defconfig": "vendor/alioth_defconfig"
     },
