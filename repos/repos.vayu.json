@@ -5,7 +5,7 @@
       "repo": "https://github.com/Sizo69/Realking_kernel_sm8250.git",
       "branch": "kernelsu",
       "device": "alioth",
-      "defconfig": "vendor/alioth_defconfig"
+      "defconfig": "alioth_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
