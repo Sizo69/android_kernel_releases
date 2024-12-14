@@ -10,8 +10,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "18",
+        "repo": "https://gitlab.com/Project-Nexus/nexus-clang.git",
+        "branch": "15",
         "name": "clang",
         "binPath": ["bin"]
       },
