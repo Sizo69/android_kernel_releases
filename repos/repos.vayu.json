@@ -11,7 +11,7 @@
     "toolchains": [
       {
         "repo": "https://gitlab.com/Project-Nexus/nexus-clang.git",
-        "branch": "15",
+        "branch": "nexus-15",
         "name": "clang",
         "binPath": ["bin"]
       },
