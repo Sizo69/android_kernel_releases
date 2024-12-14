@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Nexus",
       "repo": "https://github.com/Sizo69/nexus_kernel_xiaomi_sm8250.git",
-      "branch": "beta-test",
+      "branch": "main",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
