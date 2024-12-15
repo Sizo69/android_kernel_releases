@@ -5,7 +5,7 @@
       "repo": "https://github.com/Sizo69/nexus_kernel_xiaomi_sm8250.git",
       "branch": "main",
       "device": "alioth",
-      "defconfig": "alioth_defconfig"
+      "defconfig": "alioth_defconfig vendor/xiaomi/sm8250-common.config"
     },
     "withKernelSU": false,
     "toolchains": [
