@@ -10,8 +10,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/ZyCromerZ/Clang/releases/download/20.0.0git-20241215-release/Clang-20.0.0git-20241215.tar.gz",
-        "branch": "main",
+        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
+        "branch": "18",
         "name": "clang",
         "binPath": ["bin"]
       },
