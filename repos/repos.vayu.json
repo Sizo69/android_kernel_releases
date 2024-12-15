@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Magic",
       "repo": "https://github.com/Sizo69/kernel_xiaomi_sm8250.git",
-      "branch": "magictime-new",
+      "branch": "magictime-release-nonksu",
       "device": "alioth",
       "defconfig": "alioth_defconfig vendor/xiaomi/sm8250-common.config"
     },
