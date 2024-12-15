@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "Nexus",
+      "name": "Magic",
       "repo": "https://github.com/Sizo69/kernel_xiaomi_sm8250.git",
       "branch": "magictime-new",
       "device": "alioth",
