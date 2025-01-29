@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "RK",
-      "repo": "https://github.com/Sizo69/Realking_kernel_sm8250.git",
-      "branch": "ksu",
+      "repo": "https://github.com/Sizo69/RK-SM8250.git",
+      "branch": "main",
       "device": "alioth",
-      "defconfig": "alioth_defconfig"
+      "defconfig": "alioth_defconfig vendor/kona_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
