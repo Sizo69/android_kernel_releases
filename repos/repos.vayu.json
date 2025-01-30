@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "RK",
+      "name": "RK-Napi-Rebuild",
       "repo": "https://github.com/Sizo69/RK-SM8250.git",
       "branch": "main",
       "device": "alioth",
