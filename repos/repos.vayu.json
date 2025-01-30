@@ -5,19 +5,19 @@
       "repo": "https://github.com/Sizo69/kernel_xiaomi_vayu.git",
       "branch": "main",
       "device": "vayu",
-      "defconfig": "vayu_defconfig vendor/xiaomi/sm8250-common.config"
+      "defconfig": "vayu_defconfig vendor/vayu-perf_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/Project-Nexus/nexus-clang.git",
-        "branch": "nexus-15",
+        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
+        "branch": "18",
         "name": "clang",
         "binPath": ["bin"]
       },
       {
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
-        "branch": "android10-release",
+        "branch": "android12-release",
         "name": "gcc",
         "binPath": ["bin"]
       }
