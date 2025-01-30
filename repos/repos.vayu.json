@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Magic",
-      "repo": "https://github.com/Sizo69/kernel_xiaomi_sm8250.git",
-      "branch": "magictime-release-nonksu",
-      "device": "alioth",
-      "defconfig": "alioth_defconfig vendor/xiaomi/sm8250-common.config"
+      "name": "Kyrielight",
+      "repo": "https://github.com/Sizo69/kernel_xiaomi_vayu.git",
+      "branch": "main",
+      "device": "vayu",
+      "defconfig": "vayu_defconfig vendor/xiaomi/sm8250-common.config"
     },
     "withKernelSU": false,
     "toolchains": [
