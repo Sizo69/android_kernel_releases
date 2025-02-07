@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "Perf",
-      "repo": "https://github.com/Sizo69/InfiniR-SM8250.git",
+      "repo": "https://github.com/Sizo69/SM8250-CAF.git",
       "branch": "main",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
