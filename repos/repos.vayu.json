@@ -7,7 +7,7 @@
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
