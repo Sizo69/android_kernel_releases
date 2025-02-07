@@ -2,12 +2,12 @@
   {
     "kernelSource": {
       "name": "Perf",
-      "repo": "https://github.com/Sizo69/Redline-SM8250.git",
-      "branch": "aosp-15",
+      "repo": "https://github.com/Sizo69/InfiniR-SM8250.git",
+      "branch": "main",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
