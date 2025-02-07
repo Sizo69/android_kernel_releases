@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "RK-Napi-Rebuild",
-      "repo": "https://github.com/Sizo69/RK-SM8250.git",
-      "branch": "main",
+      "name": "Perf",
+      "repo": "https://github.com/Sizo69/Redline-SM8250.git",
+      "branch": "aosp-15",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
