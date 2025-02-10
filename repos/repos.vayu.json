@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "Avyra-Perf",
-      "repo": "https://github.com/Sizo69/Avyra-SM8250.git",
-      "branch": "Avyra",
+      "name": "RK-Avyra",
+      "repo": "https://github.com/Sizo69/RK-SM8250.git",
+      "branch": "fresh",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
