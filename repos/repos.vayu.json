@@ -5,7 +5,7 @@
       "repo": "https://github.com/Sizo69/Perf-SM8250.git",
       "branch": "main",
       "device": "alioth",
-      "defconfig": "alioth_defconfig vendor/kona_defconfig"
+      "defconfig": "alioth_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
