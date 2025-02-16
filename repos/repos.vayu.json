@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "RK-Xvyra",
-      "repo": "https://github.com/Sizo69/RK-SM8250.git",
-      "branch": "main",
+      "repo": "https://github.com/Sizo69/kernel_xiaomi_sm8250.git",
+      "branch": "magictime-miui",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
