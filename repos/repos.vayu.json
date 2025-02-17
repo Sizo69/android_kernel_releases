@@ -5,9 +5,9 @@
       "repo": "https://github.com/Sizo69/K-Nel-Alioth-MIUI.git",
       "branch": "hyper-2",
       "device": "alioth",
-      "defconfig": "alioth_defconfig vendor/xiaomi/sm8250-common.config"
+      "defconfig": "alioth_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
