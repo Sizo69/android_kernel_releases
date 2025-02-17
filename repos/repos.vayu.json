@@ -10,8 +10,8 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "18",
+        "repo": "https://gitlab.com/rvproject27/RvClang.git",
+        "branch": "main/21.x",
         "name": "clang",
         "binPath": ["bin"]
       },
