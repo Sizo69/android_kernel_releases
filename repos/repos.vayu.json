@@ -1,17 +1,17 @@
 [
   {
     "kernelSource": {
-      "name": "Kyrielight",
-      "repo": "https://github.com/Sizo69/kernel_xiaomi_vayu.git",
+      "name": "RK-Xvyra",
+      "repo": "https://github.com/Sizo69/RK-SM8250.git",
       "branch": "main",
-      "device": "vayu",
-      "defconfig": "vayu_defconfig"
+      "device": "alioth",
+      "defconfig": "alioth_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "18",
+        "repo": "https://gitlab.com/rvproject27/RvClang.git",
+        "branch": "main/21.x",
         "name": "clang",
         "binPath": ["bin"]
       },
@@ -37,7 +37,7 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/Sizo69/AnyKernel3_vayu.git",
+      "repo": "https://github.com/Sizo69/AnyKernel3_alioth.git",
       "branch": "master"
     }
   }
