@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "RK-Xvyra",
-      "repo": "https://github.com/Sizo69/RK-SM8250.git",
+      "repo": "https://github.com/Sizo69/Redline-SM8250.git",
       "branch": "main",
-      "device": "alioth",
-      "defconfig": "alioth_defconfig"
+      "device": "munch",
+      "defconfig": "munch_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
