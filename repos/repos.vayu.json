@@ -1,13 +1,13 @@
 [
   {
     "kernelSource": {
-      "name": "RK-Xvyra",
-      "repo": "https://github.com/Sizo69/marisa_kernel_xiaomi_sm8150_q.git",
-      "branch": "master",
-      "device": "cepheus",
-      "defconfig": "cepheus_defconfig"
+      "name": "Anymore-Xvyra",
+      "repo": "https://github.com/AnymoreProject/kernel_vayu_sm8150.git",
+      "branch": "test-walt",
+      "device": "vayu",
+      "defconfig": "vayu_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
         "repo": "https://gitlab.com/rvproject27/RvClang.git",
@@ -37,8 +37,8 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/Sizo69/AnyKernel3-Raphael.git",
-      "branch": "miui-r"
+      "repo": "https://github.com/Sizo69/AnyKernel3_vayu.git",
+      "branch": "master"
     }
   }
 ]
