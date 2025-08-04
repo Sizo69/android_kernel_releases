@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Anymore-Xvyra",
       "repo": "https://github.com/Anything-at-25-00/android_kernel_common_android12-5.10.git",
-      "branch": "mahiru-quince-vnl",
+      "branch": "mahiru-primrose-nt-lts",
       "device": "gki",
       "defconfig": "gki_defconfig"
     },
