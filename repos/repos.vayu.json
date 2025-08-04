@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Anymore-Xvyra",
-      "repo": "https://github.com/AnymoreProject/kernel_vayu_sm8150.git",
-      "branch": "test-walt",
-      "device": "vayu",
-      "defconfig": "vayu_defconfig"
+      "repo": "https://github.com/Anything-at-25-00/android_kernel_common_android12-5.10.git",
+      "branch": "mahiru-quince-schedhorizon",
+      "device": "gki",
+      "defconfig": "gki_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
@@ -37,8 +37,8 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/Sizo69/AnyKernel3_vayu.git",
-      "branch": "master"
+      "repo": "https://github.com/Anything-at-25-00/AnyKernel3.git",
+      "branch": "mahiru5.10"
     }
   }
 ]
