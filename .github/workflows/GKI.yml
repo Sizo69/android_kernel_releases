@@ -1,0 +1,118 @@
+name: Build kernels
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Set-repos:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Sync kernel source
+        run: |
+          git clone --depth=1 https://android.googlesource.com/kernel/common -b android14-6.1 kernel/common
+          git clone --depth=1 https://android.googlesource.com/kernel/build -b main build
+          git clone --depth=1 https://android.googlesource.com/kernel/prebuilts/build-tools -b main prebuilts/build-tools
+          git clone --depth=1 https://android.googlesource.com/kernel/prebuilts/clang/host/linux-x86 -b main prebuilts/clang/host/linux-x86
+
+  Build-Kernel:
+    runs-on: ubuntu-22.04
+    needs: Set-repos
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y bc bison build-essential cpio flex gcc g++ git \
+            libncurses5-dev libssl-dev lz4 make python3 rsync wget xz-utils zip \
+            libelf-dev dwarves curl
+
+      - name: Setup environment
+        run: |
+          export ROOT_DIR=$GITHUB_WORKSPACE
+          export KERNEL_DIR=kernel/common
+          export OUT_DIR=$ROOT_DIR/out
+          export DIST_DIR=$ROOT_DIR/dist
+          export MODULES_STAGING_DIR=$ROOT_DIR/modules_staging
+          export KERNEL_UAPI_HEADERS_DIR=$ROOT_DIR/kernel-uapi-headers
+          export MODULES_PRIVATE_DIR=$OUT_DIR/private_modules
+          export MKBOOTIMG_PATH=tools/mkbootimg/mkbootimg.py
+          mkdir -p $OUT_DIR $DIST_DIR $MODULES_STAGING_DIR
+
+      - name: Build kernel
+        run: |
+          cd kernel/common
+          make O=$OUT_DIR ${DEFCONFIG:-gki_defconfig}
+          make O=$OUT_DIR -j$(nproc)
+
+      - name: Post-build script (Google full integration)
+        run: |
+          set -e
+          export ROOT_DIR=$GITHUB_WORKSPACE
+          export KERNEL_DIR=$ROOT_DIR/kernel/common
+          export OUT_DIR=$ROOT_DIR/out
+          export DIST_DIR=$ROOT_DIR/dist
+          export MODULES_STAGING_DIR=$ROOT_DIR/modules_staging
+          export KERNEL_UAPI_HEADERS_DIR=$ROOT_DIR/kernel-uapi-headers
+          export MODULES_PRIVATE_DIR=$OUT_DIR/private_modules
+          export MKBOOTIMG_PATH=$ROOT_DIR/build/tools/mkbootimg/mkbootimg.py
+          mkdir -p $DIST_DIR
+
+          echo "==== Installing kernel modules to staging dir ===="
+          rm -rf $MODULES_STAGING_DIR/*
+          mkdir -p $MODULES_STAGING_DIR/lib/modules
+          make -C $KERNEL_DIR O=$OUT_DIR INSTALL_MOD_PATH=$MODULES_STAGING_DIR modules_install
+
+          echo "==== Copy kernel headers ===="
+          rm -rf $KERNEL_UAPI_HEADERS_DIR
+          mkdir -p $KERNEL_UAPI_HEADERS_DIR
+          make -C $KERNEL_DIR O=$OUT_DIR INSTALL_HDR_PATH=$KERNEL_UAPI_HEADERS_DIR headers_install
+
+          echo "==== Generating boot image ===="
+          cp $OUT_DIR/arch/arm64/boot/Image $DIST_DIR/Image
+          cp $OUT_DIR/arch/arm64/boot/Image.gz $DIST_DIR/Image.gz || true
+          cp $OUT_DIR/arch/arm64/boot/dtb.img $DIST_DIR/dtb.img || true
+
+          python3 $MKBOOTIMG_PATH \
+            --kernel $OUT_DIR/arch/arm64/boot/Image \
+            --ramdisk /dev/null \
+            --output $DIST_DIR/boot.img \
+            --pagesize 4096 \
+            --base 0x00000000 \
+            --os_version 14.0.0 \
+            --os_patch_level 2025-08
+
+          echo "==== Creating vendor_boot image ===="
+          python3 $MKBOOTIMG_PATH \
+            --kernel $OUT_DIR/arch/arm64/boot/Image \
+            --ramdisk /dev/null \
+            --vendor_boot $DIST_DIR/vendor_boot.img \
+            --pagesize 4096 \
+            --base 0x00000000
+
+          echo "==== Packaging modules ===="
+          tar -C $MODULES_STAGING_DIR -czf $DIST_DIR/modules.tar.gz lib
+
+          echo "==== Post-build complete. Files in $DIST_DIR ===="
+
+      - name: Pack AnyKernel3
+        run: |
+          git clone https://github.com/osm0sis/AnyKernel3.git
+          cp dist/Image* AnyKernel3/ || true
+          cp dist/dtb.img AnyKernel3/ || true
+          cp dist/vendor_boot.img AnyKernel3/ || true
+          cd AnyKernel3
+          zip -r9 ../Kernel.zip ./*
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: kernel-build
+          path: |
+            dist/*
+            Kernel.zip
