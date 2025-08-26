@@ -5,7 +5,7 @@
       "repo": "https://github.com/Anything-at-25-00/android_kernel_common_android12-5.10.git",
       "branch": "mahiru-primrose-nt-lts",
       "device": "gki",
-      "defconfig": "BUILD_CONFIG=common/build.config.gki.aarch64 build/build.sh"
+      "defconfig": "gki_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
