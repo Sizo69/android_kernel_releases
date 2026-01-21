@@ -7,7 +7,7 @@
       "device": "cepheus",
       "defconfig": "cepheus_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
         "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/02d6b60f07ed970b2ac2fd61988a0204d3f141f5/clang-r530567.tar.gz",
