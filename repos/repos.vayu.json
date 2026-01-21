@@ -10,8 +10,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/rvproject27/RvClang.git",
-        "branch": "main/21.x",
+        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/02d6b60f07ed970b2ac2fd61988a0204d3f141f5/clang-r530567.tar.gz",
+        "branch": "main",
         "name": "clang",
         "binPath": ["bin"]
       },
