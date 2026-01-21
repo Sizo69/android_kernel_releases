@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "RK-Xvyra",
-      "repo": "https://github.com/Sizo69/Redline-SM8250.git",
-      "branch": "aosp-15",
-      "device": "munch",
-      "defconfig": "munch_defconfig"
+      "repo": "https://github.com/YamazakuraH/marisa_kernel_xiaomi_sm8150_q.git",
+      "branch": "master",
+      "device": "cepheus",
+      "defconfig": "cepheus_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
